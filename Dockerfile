@@ -19,4 +19,5 @@ ENV USER root
 
 # Set entrypoint
 # ENTRYPOINT ["packer"]
-CMD ["/bin/bash"]
+# CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/sh"]
