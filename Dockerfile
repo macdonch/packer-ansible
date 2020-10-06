@@ -21,4 +21,4 @@ ENV USER root
 # ENTRYPOINT ["packer"]
 # CMD ["/bin/bash"]
 COPY entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/usr/local/bin/entrypoint.sh"]
