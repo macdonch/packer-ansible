@@ -18,4 +18,4 @@ COPY hosts /etc/ansible/hosts
 ENV USER root
 
 # Set entrypoint
-ENTRYPOINT ["packer"]
+ENTRYPOINT ["bin/packer"]
