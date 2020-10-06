@@ -27,7 +27,7 @@ podTemplate(
                 container('docker') {
                     // This is where we build the Docker image
 
-                    app = docker.build("leibniz9999/packer-ansible")
+                    app = docker.build("leibniz9999/packer-ansible-lab")
 
                 }
             }
