@@ -18,4 +18,5 @@ COPY hosts /etc/ansible/hosts
 ENV USER root
 
 # Set entrypoint
-ENTRYPOINT ["packer"]
+# ENTRYPOINT ["packer"]
+CMD ["/bin/bash"]
