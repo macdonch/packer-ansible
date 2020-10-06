@@ -7,7 +7,7 @@ RUN apk update
 RUN apk add ansible
 
 # Install google auth
-apk add --upgrade py3-google-api-python-client
+RUN apk add --upgrade py3-google-api-python-client
 
 # Set a default working dir (nice for bind mounting things inside)
 RUN mkdir /build
