@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+#!/bin/sh
 tail -f /dev/null
