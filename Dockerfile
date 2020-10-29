@@ -1,4 +1,4 @@
-FROM hashicorp/packer
+FROM hashicorp/packer:full
 
 # update available packages
 RUN apk update
