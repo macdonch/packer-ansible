@@ -11,7 +11,7 @@ RUN apk add --upgrade py3-google-api-python-client
 
 # Install google SDK
 RUN curl -sSL https://sdk.cloud.google.com | bash
-ENV PATH $PATH:/root/google-cloud-sdk/bin
+ENV PATH $PATH:./google-cloud-sdk/bin
 
 # Install openssh
 RUN apk add openssh
