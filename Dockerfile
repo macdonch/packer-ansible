@@ -1,4 +1,4 @@
-FROM hashicorp/packer
+FROM hashicorp/packer:1.6.2
 
 # update available packages
 RUN apk update
@@ -8,10 +8,6 @@ RUN apk add ansible
 
 # Install google auth
 RUN apk add --upgrade py3-google-api-python-client
-
-# Install google SDK
-RUN curl -sSL https://sdk.cloud.google.com | bash
-ENV PATH $PATH:./google-cloud-sdk/bin
 
 # Install openssh
 RUN apk add openssh
