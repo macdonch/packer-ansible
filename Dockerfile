@@ -1,4 +1,4 @@
-FROM hashicorp/packer:full
+FROM hashicorp/packer
 
 # update available packages
 RUN apk update
@@ -10,10 +10,10 @@ RUN apk add ansible
 RUN apk add --upgrade py3-google-api-python-client
 
 # Install openssh
-RUN apk add openssh
+#RUN apk add openssh
 
 # Install git
-RUN apk add git
+#RUN apk add git
 
 # Set a default working dir
 RUN mkdir /build
