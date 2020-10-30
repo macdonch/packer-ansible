@@ -9,11 +9,15 @@ RUN apk add ansible
 # Install google auth
 RUN apk add --upgrade py3-google-api-python-client
 
+# Install google SDK
+RUN curl -sSL https://sdk.cloud.google.com | bash
+ENV PATH $PATH:/root/google-cloud-sdk/bin
+
 # Install openssh
-#RUN apk add openssh
+RUN apk add openssh
 
 # Install git
-#RUN apk add git
+RUN apk add git
 
 # Set a default working dir
 RUN mkdir /build
