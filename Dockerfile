@@ -15,6 +15,9 @@ RUN apk add openssh
 # Install git
 RUN apk add git
 
+# Install winrm package
+RUN pip install "pywinrm>=0.2.2"
+
 # Set a default working dir
 RUN mkdir /build
 WORKDIR /build
