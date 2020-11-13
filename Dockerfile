@@ -4,7 +4,7 @@ FROM hashicorp/packer
 RUN apk update
 
 # add pip
-RUN apk add python py-pip
+RUN apk add py-pip
 
 # Install ansible
 RUN apk add ansible
