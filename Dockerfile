@@ -21,7 +21,6 @@ RUN apk add git
 # Install curl
 RUN apk --no-cache add curl
 
-
 # Install winrm package
 RUN pip install "pywinrm>=0.2.2"
 
