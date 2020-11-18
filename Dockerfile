@@ -21,6 +21,9 @@ RUN apk add git
 # Install winrm package
 RUN pip install "pywinrm>=0.2.2"
 
+# Install google packages
+RUN pip install requests google-auth
+
 # Set a default working dir
 RUN mkdir /build
 WORKDIR /build
