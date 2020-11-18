@@ -10,13 +10,17 @@ RUN apk add py-pip
 RUN apk add ansible
 
 # Install google auth
-RUN apk add --upgrade py3-google-api-python-client
+# RUN apk add --upgrade py3-google-api-python-client
 
 # Install openssh
 RUN apk add openssh
 
 # Install git
 RUN apk add git
+
+# Install curl
+RUN apk --no-cache add curl
+
 
 # Install winrm package
 RUN pip install "pywinrm>=0.2.2"
