@@ -16,16 +16,16 @@ RUN apk add ansible
 RUN apk add openssh
 
 # Install git
-RUN apk add git
+# RUN apk add git
 
 # Install curl
-RUN apk --no-cache add curl
+# RUN apk --no-cache add curl
 
 # Install winrm package
 RUN pip install "pywinrm>=0.2.2"
 
 # Install google packages
-RUN pip install requests google-auth
+# RUN pip install requests google-auth
 
 # Set a default working dir
 RUN mkdir /build
